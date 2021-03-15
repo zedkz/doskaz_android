@@ -1,0 +1,302 @@
+<resources>
+    <string name="app_name">Doskaz</string>
+
+    <integer name="com_vk_sdk_AppId">7589916</integer>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="notification_chanel">Notification</string>
+    <string name="notification_desc">All notifications</string>
+    <string name="empty_data">Empty data</string>
+    <string name="empty_data_description">You have not data yet.\nPlease try again later.</string>
+    <string name="empty_error">Oops!</string>
+    <string name="empty_error_description">Something went wrong.\nPlease try again later.</string>
+    <string name="refresh">Refresh</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="network_error">Network error</string>
+    <string name="not_modified_error">304 Not Modified</string>
+    <string name="bad_request_error">400 Bad Request</string>
+    <string name="unauthorized_error">401 Unauthorized</string>
+    <string name="forbidden_error">403 Forbidden</string>
+    <string name="not_found_error">404 Not Found</string>
+    <string name="method_not_allowed_error">405 Method Not Allowed</string>
+    <string name="conflict_error">409 Conflict</string>
+    <string name="unprocessable_error">422 Unprocessable</string>
+    <string name="server_error_error">500 Server Error</string>
+    <string name="timeout_error">TimeOut Exception</string>
+    <string name="rationale_external_storage_permission">Need permission</string>
+
+    <string name="save">Сақтау</string>
+    <string name="lang_kz">Қазақ</string>
+    <string name="lang_ru">Русский</string>
+    <string name="next">Келесі</string>
+    <string name="previous">Артқа</string>
+    <string name="send">Жіберу</string>
+    <string name="something_go_wrong">Бірдеңе дұрыс болмады</string>
+    <string name="edit">Өңдеу</string>
+    <string name="level">Деңгей</string>
+    <string name="object">Нысан</string>
+    <string name="checklist">Чектер</string>
+    <string name="complaint">Шағым</string>
+    <string name="current_task">Ағымдағы тапсырма</string>
+    <string name="my_profile">Менің профилім</string>
+    <string name="first_new">Жаңа бірінші</string>
+    <string name="first_old">Ескі</string>
+    <string name="choose_answer_option">Жауап таңдаңыз</string>
+    <string name="reset">Қалпына келтіру</string>
+    <string name="field_must_be_filled">Өрісті толтыру керек</string>
+    <string name="yes">Иә</string>
+    <string name="no">Жоқ</string>
+    <string name="ready">Дайын</string>
+    <string name="partial_accessible">Ішінара қол жетімді</string>
+    <string name="full_accessible">Қол жетімді</string>
+    <string name="not_accessible">Қол жетімді емес</string>
+    <string name="not_provided">Берілмеген</string>
+    <string name="full_verified">Нысан толығымен расталған</string>
+    <string name="partially_verified">Нысан ішінара тексерілген</string>
+    <string name="not_verified">Нысан расталмаған</string>
+    <string name="unknown">Белгісіз</string>
+    <string name="photo">Фото</string>
+    <string name="reviews">Пікірлер</string>
+    <string name="video">Бейне</string>
+    <string name="history">Тарих</string>
+    <string name="blog">Блог</string>
+    <string name="instruction">Нұсқаулық</string>
+    <string name="about">Жоба туралы</string>
+    <string name="fill_field">өрісті толтырыңыз</string>
+    <string name="add_object">Нысанды қосу</string>
+    <string name="help">Анықтама</string>
+    <string name="contacts">Контактілер</string>
+    <string name="settings">Параметрлер</string>
+    <string name="person_category">Пайдаланушы санаты</string>
+    <string name="field_is_required">Өрісті толтыру керек</string>
+    <string name="comment">Түсініктеме мәтіні</string>
+    <string name="cancel">Болдырмау</string>
+    <string name="download">Жүктеу</string>
+    <string name="ok">OK</string>
+    <string name="upload">Жүктеу</string>
+    <string name="photo_send_to_moderator">Суреттер модераторға жіберілді</string>
+
+    <string name="welcome_title_1">Қол жетімділігін тексеру</string>
+    <string name="welcome_title_2">Нысанды қосу</string>
+    <string name="welcome_title_3">Хабардар болып отырыңыз</string>
+    <string name="welcome_text_1">Нысандардың қол жетімділігі бағдаршам жүйесі арқылы көрсетіледі: жасыл белгіше толық қол жетімді нысандарды, сары - ішінара қол жетімді, қызыл - қол жетімді емес объектілерді білдіреді.</string>
+    <string name="welcome_text_2">Егер картада ешқандай объект жоқ болса, сіз бұл туралы ақпаратты бірнеше минут жұмсағаннан кейін, "Нысан қосу" функциясын пайдаланып, өзіңіз орналастыра аласыз. Ол үшін сіз алған фотосуреттің фотосуреттері қажет.</string>
+    <string name="welcome_text_3">Сондай-ақ картаның сайтында "Блог" бөлімінде әртүрлі пайдалы материалдармен таныса аласыз. Онда сіз кеңестер, айла-тәсілдер, іс-шаралар туралы хабарландыру және тағы басқаларды таба аласыз.</string>
+
+    <string name="sign_auth">Кіру</string>
+    <string name="sign_enter_phone">Ұялы телефоныңыздың нөмірін енгізіңіз</string>
+    <string name="sign_sms_text">Егер сіз SMS кодын алмаған болсаңыз, құрылғының ұялы байланыс операторында тіркелгеніне көз жеткізіңіз</string>
+    <string name="sign_enter_code">SMS-тен код енгізіңіз</string>
+    <string name="sign_get_sms_again">Қайта SMS қабылдау</string>
+    <string name="sign_bonus">Порталға қош келдіңіз!</string>
+    <string name="sign_bonus_text">Тіркеуді жалғастырып, өз профиліңізді толықтырыңыз</string>
+    <string name="sign_bonus_ball_1">Сізге тіркеу үшін 20 ұпай берілді</string>
+    <string name="sign_bonus_ball_2">Ақпараттарыңызды толтырып, тағы 50 ұпай алыңыз</string>
+    <string name="sign_got_to_profile">Менің профиліме өтіңіз</string>
+    <string name="sign_another_time">Басқа уақыт</string>
+    <string name="sign_sms_sent">Хабар жіберілді</string>
+
+    <string name="warning_empty_phone">Телефон өрісін толтырыңыз</string>
+    <string name="warning_wrong_phone">Жарамсыз телефон нөмірінің форматы</string>
+    <string name="warning_wrong_email">Электрондық поштаның мекен-жайы дұрыс емес</string>
+    <string name="warning_wrong_code">SMS коды дұрыс енгізілмеген</string>
+
+    <string name="profile_edit">Профильді өңдеу</string>
+    <string name="profile_edit_text">Сауалнаманы толтырғаны үшін сізге 70 ұпай беріледі. \n \nСіздің жеке ақпаратыңыз басқа қолданушыларға көрінбейді</string>
+    <string name="profile_last_name">Тегі</string>
+    <string name="profile_first_name">Аты</string>
+    <string name="profile_middle_name">Тегі</string>
+    <string name="profile_email">Электрондық пошта пошта</string>
+    <string name="profile_phone">Телефон</string>
+    <string name="profile_sms">SMS коды</string>
+    <string name="profile_get_sms">Кодты алу</string>
+    <string name="profile_get_sms_again">Қайта жіберуді %s секунд ішінде жасауға болады</string>
+    <string name="profile_show_status">Көрсетілген күй</string>
+    <string name="profile_updated">Профиль жаңартылды</string>
+    <string name="profile_my_task">Менің тапсырмаларым</string>
+    <string name="profile_my_events">Іс-шаралар арнасы</string>
+    <string name="profile_point">Ұпайлар</string>
+    <string name="profile_my_objects">Менің нысандарым</string>
+    <string name="profile_date_text">%s ішінде %s</string>
+    <string name="profile_post_date_text">%s постқа %s жіберу</string>
+    <string name="profile_download_complaint">Шағымды жүктеу</string>
+    <string name="profile_my_complaints">Менің билеттерім</string>
+    <string name="profile_sms_send">SMS коды жіберілді</string>
+    <string name="profile_my_comments">Менің пікірлерім</string>
+    <string name="profile_my_awards">Жетістіктер</string>
+    <string name="profile_logout">Шығу</string>
+    <string name="profile_are_you_sure">Шынымен жүйеден шыққыңыз келе ме?</string>
+
+    <string name="object_simple">Қарапайым форма</string>
+    <string name="object_middle">Орташа пішін</string>
+    <string name="object_full">Күрделі форма</string>
+    <string name="object_common_info">Жалпы ақпарат</string>
+    <string name="object_name">Тақырып</string>
+    <string name="object_other_name">Қосымша атау</string>
+    <string name="object_desc">Сипаттама</string>
+    <string name="object_address">Мекен-жай</string>
+    <string name="object_map">Картадағы объект</string>
+    <string name="object_category">Санат</string>
+    <string name="object_sub_category">Ішкі санат</string>
+    <string name="object_video_link">Бейне сілтемесі (міндетті емес)</string>
+    <string name="object_upload_photo">Фотосуретті жүктеу</string>
+    <string name="object_territory">Нысан аумағы</string>
+    <string name="object_parking">Жабдықталған тұрақ орындарының болуы (кемінде 1 тұрақ орны)</string>
+    <string name="object_in_group">Кіріс тобы</string>
+    <string name="object_rout">Нысан бойындағы қозғалыс жолдары</string>
+    <string name="object_service_zone">Қызмет көрсету аймағы</string>
+    <string name="object_toilet">Дәретхана</string>
+    <string name="object_navigation">Навигация</string>
+    <string name="object_created">Құрылған нысан</string>
+    <string name="object_fill_all_form">Барлық формалар қажет</string>
+
+    <string name="home_map">Карта</string>
+    <string name="home_blog">Блог</string>
+    <string name="home_instruction">Нұсқаулық</string>
+    <string name="home_profile">Профиль</string>
+    <string name="home_more">Қосымша</string>
+
+    <string name="map_home_or_address">Атауы немесе мекен-жайы</string>
+
+    <string name="filter_show_on_map">Картадан көрсету</string>
+    <string name="filter_accessibility">Нысанға қол жетімділік</string>
+    <string name="filter_category">Объект категориялары</string>
+    <string name="filter_blog_category">Санат</string>
+
+    <string name="om_parking">Тұрақ</string>
+    <string name="om_entrance">Кіру тобы</string>
+    <string name="om_movement">Нысан бойындағы қозғалыс жолдары</string>
+    <string name="om_service">Қызмет көрсету аймағы</string>
+    <string name="om_toilet">Дәретхана</string>
+    <string name="om_navigation">Навигация</string>
+    <string name="om_serviceAccessibility">Қызметтің қол жетімділігі</string>
+    <string name="om_kidsAccessibility">7 жасқа дейінгі балаларға арналған қызметтердің қол жетімділігі мен қауіпсіздігі</string>
+    <string name="om_description">Сипаттама</string>
+    <string name="om_more_info">Толығырақ</string>
+    <string name="om_verify">Деректерді тексеру</string>
+    <string name="om_complaint">Шағым беру</string>
+    <string name="om_verification">Нысан мәліметтерін тексеріңіз</string>
+    <string name="om_verification_text">%s нысаны туралы барлық мәліметтер дұрыс деп ойлайсыз ба?</string>
+    <string name="om_verification_thanks">Жауабыңыз үшін рахмет</string>
+    <string name="om_choose_from_gallery">Галереядан таңдаңыз</string>
+    <string name="om_history_verified">Модератор %s тексерілген объектінің сипаттамасы</string>
+    <string name="om_history_not_verified">%s модераторы тексеру объектісінің сипаттамасынан бас тартты</string>
+    <string name="om_history_review">%s объектіге түсініктеме берді</string>
+    <string name="om_history_supplemented">%s объектіні толықтырды</string>
+    <string name="om_impression">Алған әсерлеріңіз туралы айтыңыз</string>
+    <string name="om_minimum_20_symbols">Кемінде %s таңба енгізіңіз</string>
+    <string name="om_write_review">Пікір жазу</string>
+    <string name="om_review_warning">Шолу бос немесе 20 таңбадан кем болмауы керек</string>
+    <string name="om_found_mistake">Қате таптыңыз ба?</string>
+    <string name="om_write_review_text">Пікіріңізді қалдырыңыз. Бұл көп уақытты қажет етпейді, бірақ бұл біздің сайтты жақсартуға көмектеседі.</string>
+    <string name="om_yes_i_want">Иә, мен көмектескім келеді</string>
+    <string name="om_created_message">Хабар сәтті жіберілді. Нысан картада модератор</string>Тексергеннен кейін 24 сағат ішінде пайда болады
+
+    <string name="about_1">"Қол жетімді Қазақстан" жобасы дегеніміз не</string>
+    <string name="about_2">"Қол жетімді Қазақстан" - бұл қала объектілері мен қызметтерінің қол жетімділігі туралы ақпараты бар онлайн картасы. Картадағы ашық және ақпараттар шектеулі қозғалмалы адамдарға (мүгедектерге, мүгедектер арбасында отырған кішкентай балалары бар ата-аналарға, егде жастағы адамдарға, жүкті әйелдерге, уақытша жарақаттануға қоса) қала кеңістігін шарлауға мүмкіндік береді, ал егер картада объект жоқ болса, ыңғайлы интерфейс кез-келген адамға мүмкіндік береді объектінің барлығымен бөлісу.</string>
+    <string name="about_3">Карта қалай жұмыс істейді</string>
+    <string name="about_4">Мүмкіндігі шектеулі адамдарға арналған құралдардың болуы картада халықаралық бағдаршам жүйесі арқылы көрсетілген:</string>
+    <string name="about_5">Жасыл белгіше объектіге толық қол жетімділікті білдіреді, сіз оған кіріп, қызметтерді ешбір көмексіз пайдалана аласыз.</string>
+    <string name="about_6">сары белгіше - объект ішінара қол жетімді, бұл объектіге бару үшін сізге сырттан көмек қажет немесе оның барлық функционалды аймақтары жоқ.</string>
+    <string name="about_7">Қызыл белгіше - объектіге қол жетімді емес, кіру тобының қол жетімсіздігіне байланысты объектіге жету мүмкін емес (мысалы, пандус жоқ), немесе объект бойымен қозғалу мүмкін емес.</string>
+    <string name="about_8">Жоба мүшесі болу</string>
+    <string name="about_9">Картаны іске қосу сатысында оқытылған еріктілер 2000-нан астам қоғамдық объектілер туралы ақпарат жинады, тек фотосуреттер ғана емес, сонымен қатар видео шолулар бар. Картаны пайдаланатындардан, олар сізге күн сайын қала нысандарының қол жетімділігі туралы жедел ақпарат алуға көмектесетін СІЗДЕН үлкен үміт артамыз! Біз картаны қоғамдастық ретінде орналастырамыз және СІЗ оның белсенді мүшесі, толыққанды қатысушысы боласыз және картаға объектілерді өзіңіз қосасыз, сонымен қатар картада көрсетілген объектілер туралы түсінік бересіз және толықтырасыз деп үміттенеміз. \n \nҚартаға жаңа объектіні орналастырған кезде, түсініктемелерге мүмкіндігінше көбірек ақпарат қалдырыңыз және фотосуреттер қосыңыз, себебі бұл материалдар басқа адамға қалалық ортада жүруге көмектеседі.</string>
+    <string name="about_10">Бұл карта не үшін қажет?</string>
+    <string name="about_11"><![CDATA[<html>Картаны енгізген кезде көптеген нысандар қызыл белгішемен белгіленгенін бірден көресіз. Бұл картаға қол жетпейтін нысандар арнайы енгізілгендіктен емес, елді мекендерде қол жетімді және жартылай қол жетімді нысандар аз болғандықтан. Ұйымдар ғимаратқа кіруді бәріне қол жетімді етуге міндетті, бірақ көп жағдайда пандус стандарттарға сәйкес келмейді, немесе адам ғимаратқа кіргеннен кейін де қызметтерді пайдалана алмайды, өйткені оның жолында тар дәліздерде, баспалдақтарда жиһаз бар, лифт және және т.б. </html>]]></string>
+    <string name="about_12"><![CDATA[<html>Біз бәріміз өз еліміздің Конституциясында көрсетілгендей құқықтарға ие азаматтармыз. Нысандар мен қызметтерге қол жетімділікті шектеу біздің құқығымызды бұзу деп ойлайсыз ба? Біз бұған сенімдіміз. 2015 жылдың 20 ақпанында Нұр-Сұлтанда мүгедектердің құқықтары туралы конвенция ратификацияланды, осыдан кейін біздің мемлекет мүгедектердің өмір сүруіне қолайлы жағдай жасау міндетін өз мойнына алды. Қысқа мерзімде Конвенция мүгедектердің қоғамға басқа азаматтармен тең дәрежеде қатысуына кедергі болатын кедергілерді жою үдерісін жеделдетуі керек. </html>]]></string>
+    <string name="about_13"><![CDATA[<html>Қол жетімділік білім алуға, жұмысқа орналасуға, емделуге, демалуға және тәуелсіз өмір салтын ұстануға мүмкіндік ашады. Кедергісіз орта қоғамдық игілік болып табылады және елдің әлеуметтік-экономикалық дамуымен тығыз байланысты. Көпшілік үшін "кедергісіз орта" термині көңілдің түсіне еніп үлгерсін, бірақ біз кедергісіз орта дегеніміз дереу шындық, және бұл карта оны жақындату құралдарының бірі болып табылады деп сенеміз және сенеміз! </html>]]></string>
+    <string name="about_14">Жобаның нақты артықшылықтары</string>
+    <string name="about_15">Картадағы ақпарат сізге күнді және қала айналасындағы қозғалысты тиімді жоспарлауға көмектеседі, сонымен қатар инклюзивті ортаны құруға өз үлесін қосады. \n \nКартаны әзірлеу кезінде кез-келген уақытта объектілер туралы мәліметтер жинау функциясы құрылды - карта әкімшісі. қол жетімді немесе кіруге болмайтын қала сайттарының саны туралы статистиканы ұсына алады. Ұсынылған деректер ауылдағы нақты жағдайды көрсететін, үкіметтік емес және мемлекеттік ұйымдарға қажет заманауи құрал болып табылады.</string>
+    <string name="about_16">Жобаны іске асыру</string>
+    <string name="about_17">Жобаны қоғамдық ұйымдар консорциумы жүзеге асырады. Байланыс бетін қараңыз.</string>
+    <string name="about_18">Қаржыландыру</string>
+    <string name="about_19">Бұл жобаны Еуропалық Одақ пен АҚШ-тың Қазақстандағы Дипломатиялық Миссиясы қаржыландырады.</string>
+
+    <string name="instruction_1">Қош келдіңіз!</string>
+    <string name="instruction_2">"Қол жетімді Қазақстан" онлайн-картасына қош келдіңіз, оның көмегімен мүгедектер арбасында қозғалатын адамдарға, мүмкіндігі шектеулі жандарға және мүмкіндігі шектеулі адамдарға арналған қалалық мекемелер мен қызметтердің қол жетімділігі туралы ақпарат ала аласыз. көру және есту.</string>
+    <string name="instruction_3">Қол жетімділігін тексеру</string>
+    <string name="instruction_4">Нысандардың қол жетімділігі бағдаршам жүйесі арқылы көрсетіледі: жасыл белгіше толық қол жетімді нысандарды, сары - ішінара қол жетімді, қызыл - қол жетімді емес объектілерді көрсетеді.</string>
+    <string name="instruction_5">Нысанды қосу</string>
+    <string name="instruction_6">Егер картада ешқандай объект жоқ болса, сіз ол туралы ақпаратты бірнеше минут жұмсағаннан кейін "Нысан қосу" функциясын қолданып орналастыра аласыз. Ол үшін сіз алған фотосуреттің фотосуреттері қажет.</string>
+    <string name="instruction_7">Хабардар болып отырыңыз</string>
+    <string name="instruction_8">Сондай-ақ картаның сайтында сіз "Блог" бөлімінен әр түрлі пайдалы материалдарды таба аласыз. Онда сіз кеңестер, айла-тәсілдер, іс-шаралар туралы хабарландыру және тағы басқаларды таба аласыз.</string>
+
+    <string name="contacts_1">info@doskaz.kz</string>
+    <string name="contacts_2">8 (701) 346-21-77</string>
+    <string name="contacts_3">facebook.com/doskazkz</string>
+    <string name="contacts_4">instagram.com/doskaz.kz</string>
+    <string name="contacts_write_us">Бізге электрондық пошта арқылы жіберу</string>
+    <string name="contacts_your_name">Сіздің атыңыз</string>
+    <string name="contacts_your_email">Электрондық пошта пошта</string>
+    <string name="contacts_your_text">Хабар мәтіні</string>
+    <string name="contacts_regional">Қаладағы аймақтық өкілдер</string>
+    <string name="contacts_sent">Хабар жіберілді</string>
+    <string name="contacts_initiative">Бастамашыл топ</string>
+    <string name="contacts_work_time">Бізбен электрондық пошта арқылы, байланыс орталығы арқылы немесе форманы толтыру арқылы байланыса аласыз. \n \nБайланыс орталығы жұмыс күндері сағат 09: 00-ден 18: 00-ге дейін жұмыс істейді</string>
+
+    <string name="blog_similar">Қатысты мазмұн</string>
+    <string name="blog_comment">%s пікір</string>
+    <string name="blog_reply">Жауап беру</string>
+    <string name="blog_replied">%s жауап ретінде</string>
+
+    <string name="complaint_create">Шағым беру</string>
+    <string name="complaint_text"><![CDATA[Назар аударыңыз! Сіздің хатыңыз кейіннен мемлекеттік органға жіберілетін болғандықтан, ол белгілі бір талаптарды орындауы керек, мысалы, толық аты-жөні, ЖСН, мекен-жайы (Қазақстан Республикасының 2007 жылғы 12 қаңтардағы Заңының 6-бабының 2-тармағы). 221-III "Жеке және заңды тұлғалардың өтініштерін қарау тәртібі туралы"). Осы өрістерді қатесіз толтырыңыз. Анонимді өтініштер қарастырылмайды.
+<p><p><span style = "color: red">* </span>Міндетті өрістер </p></p>]]></string>
+    <string name="complaint_common_info">Жалпы ақпарат</string>
+    <string name="complaint_surname"><![CDATA[Тегі <span style = "color: red">* </span>]]></string>
+    <string name="complaint_name"><![CDATA[Атауы <span style = "color: red">* </span>]]></string>
+    <string name="complaint_middle_name"><![CDATA[Атауы <span style = "color: red">* </span>]]></string>
+    <string name="complaint_iin"><![CDATA[IIN <span style = "color: red">* </span>]]></string>
+    <string name="complaint_city"><![CDATA[Қала <span style = "color: red">* </span>]]></string>
+    <string name="complaint_street"><![CDATA[Street <span style = "color: red">* </span>]]></string>
+    <string name="complaint_house"><![CDATA[Үй <span style = "color: red">* </span>]]></string>
+    <string name="complaint_apartment">Пәтер</string>
+    <string name="complaint_phone"><![CDATA[Телефон <span style = "color: red">* </span>]]></string>
+    <string name="complaint_authority"><![CDATA[Шағым беру органы <span style = "color: red">* </span>]]></string>
+    <string name="complaint_save_data">Менің мәліметтерімді есте сақтаңыз</string>
+    <string name="complaint_type"><![CDATA[Шағым түрі <span style = "color: red">* </span>]]></string>
+    <string name="complaint_date"><![CDATA[Нысанға барған күн <span style = "color: red">* </span>]]></string>
+    <string name="complaint_object_name"><![CDATA[Нысан атауы <span style = "color: red">* </span>]]></string>
+    <string name="complaint_office">Office (бар болса)</string>
+    <string name="complaint_goal"><![CDATA[Нысанға бару нысаны <span style = "color: red">* </span>]]></string>
+    <string name="complaint_choose"><![CDATA[Тізімнен объектіде сізге сәйкес келмегенді таңдаңыз немесе пікір қалдырыңыз <span style = "color: red">* </span>]]></string>
+    <string name="complaint_other">Басқа</string>
+    <string name="complaint_life_thread">Бұл жағдайлар менің өмірім мен денсаулығыма зиян келтіру қаупін тудырды (бар-жоғын тексеріңіз)</string>
+    <string name="complaint_app">Қосымшалар</string>
+    <string name="complaint_video_link">Бейне сілтемесі (міндетті емес)</string>
+    <string name="complaint_upload_photo">Фотосуретті жүктеп салыңыз</string>
+    <string name="complaint_type_1">Нысанға кіре берісте пандус / көтергіштің жоқтығына шағым</string>
+    <string name="complaint_type_2">Нысанға кіру мүмкіндігінің жоқтығы немесе нысанның функционалдық аймақтарының нормативтік талаптарға сәйкес келмейтіндігі туралы шағым</string>
+    <string name="complain_created">Шағым берілді</string>
+    <string name="complaint_wrong_iin">ЖСН форматы жарамсыз</string>
+    <string name="complaint_choose_photo">Кемінде бір фотосурет таңдаңыз</string>
+    <string name="complaint_options_warning">Тізімнен мекемеде сізге сәйкес келмегенді таңдаңыз немесе түсініктеме қалдырыңыз</string>
+    <string name="complaint_file_downloaded">%s файлы жүктеліп, Жүктеу қалтасына орналастырылды</string>
+    <string name="complaint_file_downloading">Файл жүктеу</string>
+    <string name="complaint_download_message">Біз .docx форматында шағым жасадық, оны мына жерден немесе өзімнің профилімнен Менің билеттерім қойындысынан жүктей аласыз</string>
+
+    <string name="availability_mark">Аймақтың қол жетімділігін бағалау</string>
+    <string name="availability_1">Мүгедектер арбасын пайдаланушылар</string>
+    <string name="availability_2">Тірек-қимыл аппараты бұзылған адамдар</string>
+    <string name="availability_3">Нашар көретіндер</string>
+    <string name="availability_4">Есту қабілеті шектеулі адамдар</string>
+    <string name="availability_5">Ақыл-ой кемістігі бар адамдар</string>
+    <string name="availability_disagree">Жүйе %s деп бағалады. Егер сіз бағалауға келіспесеңіз, түсініктемесі бар пікір қалдыра аласыз</string>
+
+    <string name="mark_1">Енгізу тобының қол жетімділігі</string>
+    <string name="mark_2">Автотұрақтың қол жетімділігі</string>
+    <string name="mark_3">Қызмет аймағының қол жетімділігі</string>
+    <string name="mark_4">Дәретхананың қол жетімділік деңгейі</string>
+    <string name="mark_5">Навигацияға қол жетімділік деңгейі</string>
+    <string name="mark_6">Қызметтің қол жетімділігі</string>
+    <string name="mark_7">Объект бойындағы жолдардың қол жетімділік деңгейі</string>
+    <string name="mark_8">7 жасқа дейінгі балаларға арналған қызметтердің қол жетімділік деңгейі мен қауіпсіздігі</string>
+
+    <string name="settings_language">Тіл</string>
+    <string name="settings_notification">Хабарландырулар</string>
+    <string name="settings_category">Санат</string>
+    <string name="settings_city">Қала</string>
+
+
+</resources>

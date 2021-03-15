@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootCategoryFilter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imgIconCategoryFilter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/ic_30"/>
+
+    <TextView
+        android:id="@+id/txtTitleCategoryFilter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/imgIconCategoryFilter"
+        app:layout_constraintBottom_toBottomOf="@id/imgIconCategoryFilter"
+        app:layout_constraintStart_toEndOf="@id/imgIconCategoryFilter"
+        app:layout_constraintEnd_toStartOf="@id/imgExposeCategoryFilter"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"/>
+    
+    <ImageView
+        android:id="@+id/imgExposeCategoryFilter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="@id/txtTitleCategoryFilter"
+        app:layout_constraintBottom_toBottomOf="@id/txtTitleCategoryFilter"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="15dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_76"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCategoryFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtTitleCategoryFilter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

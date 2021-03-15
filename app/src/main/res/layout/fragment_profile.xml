@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTransparent">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/img_2"
+                        android:scaleType="centerCrop"
+                        app:layout_collapseMode="parallax"/>
+
+                        <include
+                            android:id="@+id/toolbar"
+                            layout="@layout/include_toolbar"/>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.3"/>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.6"/>
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_marginTop="100dp"
+                            android:background="@drawable/skin_white_corner_top"/>
+
+                        <ImageView
+                            android:id="@+id/imgAvatarProfile"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            app:layout_constraintTop_toTopOf="@id/view"
+                            app:layout_constraintStart_toStartOf="@id/view"
+                            android:layout_margin="24dp"
+                            android:src="@drawable/ic_60"/>
+
+                        <ImageView
+                            android:id="@+id/imgLevelProfile"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:layout_constraintTop_toTopOf="@id/imgAvatarProfile"
+                            app:layout_constraintEnd_toEndOf="@id/imgAvatarProfile"
+                            android:src="@drawable/ic_41"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/txtNameProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="@id/imgAvatarProfile"
+                            app:layout_constraintStart_toEndOf="@id/imgAvatarProfile"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="44dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+                            android:id="@+id/imgVerifiedProfile"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:layout_constraintTop_toTopOf="@id/txtNameProfile"
+                            app:layout_constraintBottom_toBottomOf="@id/txtNameProfile"
+                            app:layout_constraintStart_toEndOf="@id/txtNameProfile"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/ic_61"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/txtStatusProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/txtNameProfile"
+                            app:layout_constraintStart_toStartOf="@id/txtNameProfile"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="24dp"/>
+
+                        <Button
+                            android:id="@+id/btnEditProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/button_height"
+                            app:layout_constraintTop_toBottomOf="@id/txtStatusProfile"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginTop="50dp"
+                            android:background="@drawable/skin_gray_light"
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/edit"/>
+
+                        <TextView
+                            android:id="@+id/txtLevelProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/btnEditProfile"
+                            app:layout_constraintStart_toStartOf="@id/btnEditProfile"
+                            android:layout_marginTop="15dp"
+                            android:textStyle="bold"
+                            android:text="@string/level"/>
+
+                        <TextView
+                            android:id="@+id/txtCurrentLevelProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="@id/txtLevelProfile"
+                            app:layout_constraintBottom_toBottomOf="@id/txtLevelProfile"
+                            app:layout_constraintEnd_toEndOf="@id/btnEditProfile"/>
+
+                        <ProgressBar
+                            android:id="@+id/prgLevelProfile"
+                            android:layout_width="@dimen/progress_bar_width"
+                            android:layout_height="@dimen/progress_bar_height"
+                            app:layout_constraintTop_toTopOf="@id/txtCurrentLevelProfile"
+                            app:layout_constraintBottom_toBottomOf="@id/txtCurrentLevelProfile"
+                            app:layout_constraintEnd_toStartOf="@id/txtCurrentLevelProfile"
+                            app:layout_constraintVertical_bias="0.66"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="horizontal"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:progressDrawable="@drawable/skin_progress"/>
+
+                        <TextView
+                            android:id="@+id/txtObjectProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/txtLevelProfile"
+                            app:layout_constraintStart_toStartOf="@id/btnEditProfile"
+                            app:layout_constraintEnd_toStartOf="@id/guideline_1"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txtChecklistProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="@id/txtObjectProfile"
+                            app:layout_constraintStart_toEndOf="@id/guideline_1"
+                            app:layout_constraintEnd_toStartOf="@id/guideline_2"
+                            android:layout_marginStart="5dp"/>
+
+                        <TextView
+                            android:id="@+id/txtComplaintProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="@id/txtObjectProfile"
+                            app:layout_constraintStart_toEndOf="@id/guideline_2"
+                            app:layout_constraintEnd_toEndOf="@id/btnEditProfile"
+                            android:layout_marginStart="5dp"/>
+
+                        <View
+                            android:id="@+id/divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            app:layout_constraintTop_toBottomOf="@id/txtObjectProfile"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/colorGrey"/>
+
+                        <TextView
+                            android:id="@+id/txtTaskProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/divider"
+                            app:layout_constraintStart_toStartOf="@id/btnEditProfile"
+                            android:layout_marginTop="15dp"
+                            android:textStyle="bold"
+                            android:text="@string/current_task"/>
+
+                        <TextView
+                            android:id="@+id/txtCurrentTaskProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="@id/txtTaskProfile"
+                            app:layout_constraintBottom_toBottomOf="@id/txtTaskProfile"
+                            app:layout_constraintEnd_toEndOf="@id/btnEditProfile"/>
+
+                        <ProgressBar
+                            android:id="@+id/prgTaskProfile"
+                            android:layout_width="@dimen/progress_bar_width"
+                            android:layout_height="@dimen/progress_bar_height"
+                            app:layout_constraintTop_toTopOf="@id/txtCurrentTaskProfile"
+                            app:layout_constraintBottom_toBottomOf="@id/txtCurrentTaskProfile"
+                            app:layout_constraintEnd_toStartOf="@id/txtCurrentTaskProfile"
+                            app:layout_constraintVertical_bias="0.66"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="horizontal"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:progressDrawable="@drawable/skin_progress"/>
+
+                        <TextView
+                            android:id="@+id/txtTaskTextProfile"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/txtCurrentTaskProfile"
+                            app:layout_constraintStart_toStartOf="@id/btnEditProfile"
+                            app:layout_constraintEnd_toEndOf="@id/btnEditProfile"
+                            android:layout_marginTop="12dp"/>
+
+                        <View
+                            android:id="@+id/divider1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            app:layout_constraintTop_toBottomOf="@id/txtTaskTextProfile"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/colorGrey"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/navViewProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/divider1"
+                    app:labelVisibilityMode="unlabeled"
+                    android:background="@color/colorWhite"
+                    app:menu="@menu/nav_profile"
+                    app:elevation="0dp"
+                    app:layout_collapseMode="pin"/>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    app:layout_constraintTop_toBottomOf="@id/navViewProfile"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/colorGrey"
+                    app:layout_collapseMode="pin"/>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/container_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

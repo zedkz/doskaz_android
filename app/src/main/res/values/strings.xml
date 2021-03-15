@@ -1,0 +1,302 @@
+<resources>
+    <string name="app_name">Doskaz</string>
+
+    <integer name="com_vk_sdk_AppId">7589916</integer>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="notification_chanel">Notification</string>
+    <string name="notification_desc">All notifications</string>
+    <string name="empty_data">Empty data</string>
+    <string name="empty_data_description">You have not data yet.\nPlease try again later.</string>
+    <string name="empty_error">Oops!</string>
+    <string name="empty_error_description">Something went wrong.\nPlease try again later.</string>
+    <string name="refresh">Refresh</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="network_error">Network error</string>
+    <string name="not_modified_error">304 Not Modified</string>
+    <string name="bad_request_error">400 Bad Request</string>
+    <string name="unauthorized_error">401 Unauthorized</string>
+    <string name="forbidden_error">403 Forbidden</string>
+    <string name="not_found_error">404 Not Found</string>
+    <string name="method_not_allowed_error">405 Method Not Allowed</string>
+    <string name="conflict_error">409 Conflict</string>
+    <string name="unprocessable_error">422 Unprocessable</string>
+    <string name="server_error_error">500 Server Error</string>
+    <string name="timeout_error">TimeOut Exception</string>
+    <string name="rationale_external_storage_permission">Need permission</string>
+
+    <string name="save">Сохранить</string>
+    <string name="lang_kz">Қазақ</string>
+    <string name="lang_ru">Русский</string>
+    <string name="next">Далее</string>
+    <string name="previous">Назад</string>
+    <string name="send">Отправить</string>
+    <string name="something_go_wrong">Что то пошло не так</string>
+    <string name="edit">Редактировать</string>
+    <string name="level">Уровень</string>
+    <string name="object">Объект</string>
+    <string name="checklist">Проверок</string>
+    <string name="complaint">Жалоб</string>
+    <string name="current_task">Текущее задание</string>
+    <string name="my_profile">Мой профиль</string>
+    <string name="first_new">Сначала новые</string>
+    <string name="first_old">Сначала старые</string>
+    <string name="choose_answer_option">Выберите вариант ответа</string>
+    <string name="reset">Сбросить</string>
+    <string name="field_must_be_filled">Поле должно быть заполнено</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="ready">Готово</string>
+    <string name="partial_accessible">Частично доступно</string>
+    <string name="full_accessible">Доступно</string>
+    <string name="not_accessible">Недоступно</string>
+    <string name="not_provided">Не предусмотрено</string>
+    <string name="full_verified">Объект полностью верифицирован</string>
+    <string name="partially_verified">Объект частично верифицирован</string>
+    <string name="not_verified">Объект не верифицирован</string>
+    <string name="unknown">Неизвестно</string>
+    <string name="photo">Фото</string>
+    <string name="reviews">Отзывы</string>
+    <string name="video">Видео</string>
+    <string name="history">История</string>
+    <string name="blog">Блог</string>
+    <string name="instruction">Инструкция</string>
+    <string name="about">О проекте</string>
+    <string name="fill_field">Заполните поле</string>
+    <string name="add_object">Добавить объект</string>
+    <string name="help">Помощь</string>
+    <string name="contacts">Контакты</string>
+    <string name="settings">Настройки</string>
+    <string name="person_category">Категория пользователя</string>
+    <string name="field_is_required">Поле должно быть заполнено</string>
+    <string name="comment">Текст комментария</string>
+    <string name="cancel">Отменить</string>
+    <string name="download">Скачать</string>
+    <string name="ok">OK</string>
+    <string name="upload">Загрузить</string>
+    <string name="photo_send_to_moderator">Фотографии отправлены модератору</string>
+
+    <string name="welcome_title_1">Проверьте доступность</string>
+    <string name="welcome_title_2">Добавьте объект</string>
+    <string name="welcome_title_3">Будьте в курсе</string>
+    <string name="welcome_text_1">Доступность объектов обозначена системой светофора: зеленая иконка обозначает полностью доступные объекты, желтая — частично доступные, красная — недоступные объекты.</string>
+    <string name="welcome_text_2">В случае отсутствия объекта на карте, вы можете сами разместить о нем информацию, воспользовавшись функцией «Добавить объект», потратив на это пару минут. Для этого вам понадобятся фотографии объекта, сделанные вами.</string>
+    <string name="welcome_text_3">Также на сайте карты вы сможете ознакомиться с различными полезными материалами в разделе «Блог». Там вы найдете советы, рекомендации, анонсы мероприятий и много другое.</string>
+
+    <string name="sign_auth">Авторизация</string>
+    <string name="sign_enter_phone">Введите номер мобильного телефона</string>
+    <string name="sign_sms_text">Если вы не получили смс-код, убедитесь что ваше устройство прошло регистрацию у сотового оператора</string>
+    <string name="sign_enter_code">Введите код из СМС</string>
+    <string name="sign_get_sms_again">Получить СМС ещё раз</string>
+    <string name="sign_bonus">Добро пожаловать на портал!</string>
+    <string name="sign_bonus_text">Продолжите регистрацию и заполните свой профиль</string>
+    <string name="sign_bonus_ball_1">За регистрацию вам начислено 20 баллов</string>
+    <string name="sign_bonus_ball_2">Заполните информацию о себе и получите ещё 50 баллов</string>
+    <string name="sign_got_to_profile">Перейти в мой профиль</string>
+    <string name="sign_another_time">В другой раз</string>
+    <string name="sign_sms_sent">Сообщение отправлено</string>
+
+    <string name="warning_empty_phone">Заполните поле телефон</string>
+    <string name="warning_wrong_phone">Не правильный формат номера телефона</string>
+    <string name="warning_wrong_email">Не правильный формат email адреса</string>
+    <string name="warning_wrong_code">Не правильно введен смс код</string>
+
+    <string name="profile_edit">Редактирование анкеты</string>
+    <string name="profile_edit_text">За заполнение анкеты вы получите 70 баллов.\n\nВаша личная информация не будет видна другим пользователям</string>
+    <string name="profile_last_name">Фамилия</string>
+    <string name="profile_first_name">Имя</string>
+    <string name="profile_middle_name">Отчество</string>
+    <string name="profile_email">Эл. почта</string>
+    <string name="profile_phone">Телефон</string>
+    <string name="profile_sms">СМС-код</string>
+    <string name="profile_get_sms">Получить код</string>
+    <string name="profile_get_sms_again">Повторную отправку можно выполнить через %s секунд</string>
+    <string name="profile_show_status">Отображаемый статус</string>
+    <string name="profile_updated">Профиль обновлен</string>
+    <string name="profile_my_task">Мои задания</string>
+    <string name="profile_my_events">Лента событий</string>
+    <string name="profile_point">Баллов</string>
+    <string name="profile_my_objects">Мои объекты</string>
+    <string name="profile_date_text">%s в %s</string>
+    <string name="profile_post_date_text">%s в %s к посту</string>
+    <string name="profile_download_complaint">Скачать жалобу</string>
+    <string name="profile_my_complaints">Мои тикеты</string>
+    <string name="profile_sms_send">Смс код отправлен</string>
+    <string name="profile_my_comments">Мои комментарии</string>
+    <string name="profile_my_awards">Достижения</string>
+    <string name="profile_logout">Выход</string>
+    <string name="profile_are_you_sure">Вы действительно хотите выйти?</string>
+
+    <string name="object_simple">Простая форма</string>
+    <string name="object_middle">Средняя форма</string>
+    <string name="object_full">Сложная форма</string>
+    <string name="object_common_info">Общая информация</string>
+    <string name="object_name">Название</string>
+    <string name="object_other_name">Дополнительное название</string>
+    <string name="object_desc">Описание</string>
+    <string name="object_address">Адрес</string>
+    <string name="object_map">Объект на карте</string>
+    <string name="object_category">Категория</string>
+    <string name="object_sub_category">Подкатегория</string>
+    <string name="object_video_link">Ссылка на видео (не обязательно)</string>
+    <string name="object_upload_photo">Загрузите фото</string>
+    <string name="object_territory">Территория объекта</string>
+    <string name="object_parking">Наличие оборудованных парковочных мест (Не менее 1 места на парковке)</string>
+    <string name="object_in_group">Входная группа</string>
+    <string name="object_rout">Пути движения по объекту</string>
+    <string name="object_service_zone">Зона оказания услуг</string>
+    <string name="object_toilet">Туалет</string>
+    <string name="object_navigation">Навигация</string>
+    <string name="object_created">Объект создан</string>
+    <string name="object_fill_all_form">Все формы обязательны для заполнения</string>
+
+    <string name="home_map">Карта</string>
+    <string name="home_blog">Блог</string>
+    <string name="home_instruction">Инструкция</string>
+    <string name="home_profile">Профиль</string>
+    <string name="home_more">Еще</string>
+
+    <string name="map_home_or_address">Название или адрес</string>
+
+    <string name="filter_show_on_map">Показать на карте</string>
+    <string name="filter_accessibility">Доступность объекта</string>
+    <string name="filter_category">Категории объектов</string>
+    <string name="filter_blog_category">Категория</string>
+
+    <string name="om_parking">Парковка</string>
+    <string name="om_entrance">Входная группа</string>
+    <string name="om_movement">Пути движения по объекту</string>
+    <string name="om_service">Зона оказания услуги</string>
+    <string name="om_toilet">Туалет</string>
+    <string name="om_navigation">Навигация</string>
+    <string name="om_serviceAccessibility">Доступность услуги</string>
+    <string name="om_kidsAccessibility">Доступность и безопасность услуг для детей до 7 лет</string>
+    <string name="om_description">Описание</string>
+    <string name="om_more_info">Подробная информация</string>
+    <string name="om_verify">Подтвердить данные</string>
+    <string name="om_complaint">Подать жалобу</string>
+    <string name="om_verification">Подтвердите данные об объекте</string>
+    <string name="om_verification_text">Считаете ли вы, что все данные об объекте «%s» заполнены верно?</string>
+    <string name="om_verification_thanks">Спасибо за ответ</string>
+    <string name="om_choose_from_gallery">Выбрать из галереи</string>
+    <string name="om_history_verified">Модератор %s верифицировал описание объекта</string>
+    <string name="om_history_not_verified">Модератор %s отклонил верифицификацию описание объекта</string>
+    <string name="om_history_supplemented">%s дополнил(а) объекта</string>
+    <string name="om_history_review">%s прокомментировала объект</string>
+    <string name="om_impression">Расскажите о ваших впечатлениях</string>
+    <string name="om_minimum_20_symbols">Введите минимум %s символов</string>
+    <string name="om_write_review">Написать отзыв</string>
+    <string name="om_review_warning">Отзыв не может быть пустым или меньше 20 символов</string>
+    <string name="om_found_mistake">Нашли ошибку?</string>
+    <string name="om_write_review_text">Пожалуйста, оставьте свой отзыв. Это не займет много времени, но поможет сделать наш сайт лучше.</string>
+    <string name="om_yes_i_want">Да, я хочу помочь</string>
+    <string name="om_created_message">Сообщение успешно отправлено. Объект появиться на карте в течение суток после проверки модератором</string>
+
+    <string name="about_1">Что представляет собой проект\n«Доступный Казахстан»</string>
+    <string name="about_2">«Доступный Казахстан» — это онлайн-карта, на которую нанесена информация о доступности городских объектов и услуг. Открытые и бесплатные данные на карте дают возможность маломобильным группам населения (включая людей с инвалидностью, родителей с маленькими детьми на колясках, пожилых, беременных, временно-травмированных) ориентироваться в городском пространстве, а в случае отсутствия объекта на карте удобный интерфейс предоставляет возможность любому желающему поделиться со всеми информацией о доступности объекта.</string>
+    <string name="about_3">Как работает карта</string>
+    <string name="about_4">Доступность объектов для маломобильных групп населения обозначена на карте международной системой светофора:</string>
+    <string name="about_5">Зеленая иконка обозначает, что объект полностью доступен, его можно посетить и воспользоваться услугами самостоятельно, без посторонней помощи.</string>
+    <string name="about_6">Желтая иконка — объект частично доступен, для посещения данного объекта нужна посторонняя помощь, либо не все его функциональные зоны доступны.</string>
+    <string name="about_7">Красная иконка — объект недоступен, попасть на объект невозможно из-за недоступности входной группы (например, нет пандуса), либо невозможности движения по объекту.</string>
+    <string name="about_8">Стань участником проекта</string>
+    <string name="about_9">На этапе запуска карты обученные волонтеры собрали информацию о более 2000 общественных объектов, есть не только фото-, но и видеообзоры. Мы возлагаем большие надежды именно на ВАС, на тех, кто пользуется картой, кому она ежедневно помогает получать актуальную информацию о доступности городских объектов! Мы позиционируем карту как сообщество, и надеемся, что ВЫ станете ее активным членом, полноценным участником и будете сами добавлять объекты на карту, а также комментировать и дополнять информацию об уже отраженных на карте объектах.\n\nПри самостоятельном размещении на карте нового объекта, пожалуйста, оставляйте в комментариях как можно более подробную информацию и прикрепляйте фотографии, ведь именно эти материалы помогут другому человеку ориентироваться в городской среде.</string>
+    <string name="about_10">Почему эта карта необходима?</string>
+    <string name="about_11"><![CDATA[<html>Зайдя на карту, вы сразу же увидите, что множество объектов отмечены красной иконкой. Так получилось не потому, что на карту специально заносились недоступные объекты, а потому, что доступных и частично доступных объектов в населенных пунктах намного меньше. Организации обязаны сделать вход в здание доступным для всех, но в большинстве случаев либо пандус не соответствует нормативам, либо человек, даже попав в здание, не может воспользоваться услугами, так как на его пути встречается мебель в узких коридорах, лестницы, а лифты отсутствуют и т.п.</html>]]></string>
+    <string name="about_12"><![CDATA[<html>Мы все — граждане своей страны с одинаковыми правами, отраженными в Конституции. Считаете ли вы, что ограничение в доступе к объектам и услугам является нарушением наших прав? Мы в этом уверены. 20 февраля 2015 года в Нур-Султане была ратифицирована Конвенция о правах людей с инвалидностью, после чего наше государство взяло на себя обязанность обеспечить благоприятную среду жизнедеятельности для людей с инвалидностью. В ближайшей перспективе Конвенция должна максимально ускорить процесс стирания барьеров, мешающих людям с инвалидностью полноценно участвовать в жизни общества наравне с другими гражданами.</html>]]></string>
+    <string name="about_13"><![CDATA[<html>Доступность открывает путь к получению образования, трудоустройству, лечению, отдыху, к возможности вести независимый образ жизни. Безбарьерная среда является общественным благом и тесно связана с социальным и экономическим развитием страны. Пусть термин «безбарьерная среда» для многих уже приобрел окрас разочарования, но мы надеемся и верим, что безбарьерная среда — это ближайшая реальность, и данная карта один из инструментов ее приближения!</html>]]></string>
+    <string name="about_14">Реальная польза проекта</string>
+    <string name="about_15">Информация на карте поможет не только эффективно распланировать свой день и передвижения по городу, но и будет способствовать созданию инклюзивной среды.\n\nПри разработке карты была создана функция сбора данных об объектах — администратор карты в любой момент может предоставить статистические данные о количестве доступных или недоступных для посещения городских объектах. Представленные данные — это актуальный инструмент, показывающий реальную ситуацию в населенном пункте, необходимый для неправительственных и государственных организаций.</string>
+    <string name="about_16">Реализация проекта</string>
+    <string name="about_17">Проект реализуется консорциумом общественных организаций. Смотрите страницу Контакты.</string>
+    <string name="about_18">Финансирование</string>
+    <string name="about_19">Проект финансируется Европейским Союзом и Дипломатической миссией США в Казахстане.</string>
+
+    <string name="instruction_1">Добро пожаловать!</string>
+    <string name="instruction_2">Приветствуем вас на онлайн-карте «Доступный Казахстан», с помощью которой вы сможете получить информацию о доступности городских объектов и услуг для людей, передвигающимся на креслах-колясках, маломобильных групп населения, а также людей с инвалидностью по зрению и слуху.</string>
+    <string name="instruction_3">Проверьте доступность</string>
+    <string name="instruction_4">Доступность объектов обозначена системой светофора: зеленая иконка обозначает полностью доступные объекты, желтая — частично доступные, красная — недоступные объекты.</string>
+    <string name="instruction_5">Добавьте объект</string>
+    <string name="instruction_6">В случае отсутствия объекта на карте, вы можете сами разместить о нем информацию, воспользовавшись функцией «Добавить объект», потратив на это пару минут. Для этого вам понадобятся фотографии объекта, сделанные вами.</string>
+    <string name="instruction_7">Будьте в курсе</string>
+    <string name="instruction_8">Также на сайте карты вы сможете ознакомиться с различными полезными материалами в разделе «Блог». Там вы найдете советы, рекомендации, анонсы мероприятий и много другое.</string>
+
+    <string name="contacts_1">info@doskaz.kz</string>
+    <string name="contacts_2">8 (701) 346-21-77</string>
+    <string name="contacts_3">facebook.com/doskazkz</string>
+    <string name="contacts_4">instagram.com/doskaz.kz</string>
+    <string name="contacts_write_us">Напишите нам</string>
+    <string name="contacts_your_name">Ваше имя</string>
+    <string name="contacts_your_email">Эл. почта</string>
+    <string name="contacts_your_text">Текст сообщения</string>
+    <string name="contacts_regional">Региональные представители в городе</string>
+    <string name="contacts_sent">Сообщение отправлено</string>
+    <string name="contacts_initiative">Инициативная группа</string>
+    <string name="contacts_work_time">Вы можете связаться с нами по электронной почте, через колл-центр или же заполнив форму.\n\nКолл-центр работает в рабочие дни с 09:00 до 18:00</string>
+
+    <string name="blog_similar">Похожие материалы</string>
+    <string name="blog_comment">%s комментариев</string>
+    <string name="blog_reply">Ответить</string>
+    <string name="blog_replied">В ответ %s</string>
+
+    <string name="complaint_create">Подать жалобу</string>
+    <string name="complaint_text"><![CDATA[Внимание! В связи с тем, что Ваше письмо в дальнейшем будет направлено в государственный орган, оно должно выполнять определенные требования, такие как наличие Ф.И.О., ИИН, адреса (пункт 2 статьи 6 Закона Республики Казахстан от 12.01.2007 г. № 221-III «О порядке рассмотрения обращений физических и юридических лиц»). Пожалуйста, заполните данные поля без ошибок. Анонимные обращения не рассматриваются.
+    <p><p><span style="color:red">*</span> Поля, обязательные для заполнения</p></p>]]></string>
+    <string name="complaint_common_info">Общая информация</string>
+    <string name="complaint_surname"><![CDATA[Фамилия <span style="color:red">*</span>]]></string>
+    <string name="complaint_name"><![CDATA[Имя <span style="color:red">*</span>]]></string>
+    <string name="complaint_middle_name"><![CDATA[Отчество <span style="color:red">*</span>]]></string>
+    <string name="complaint_iin"><![CDATA[ИИН <span style="color:red">*</span>]]></string>
+    <string name="complaint_city"><![CDATA[Город <span style="color:red">*</span>]]></string>
+    <string name="complaint_street"><![CDATA[Улица <span style="color:red">*</span>]]></string>
+    <string name="complaint_house"><![CDATA[Дом <span style="color:red">*</span>]]></string>
+    <string name="complaint_apartment">Квартира</string>
+    <string name="complaint_phone"><![CDATA[Телефон <span style="color:red">*</span>]]></string>
+    <string name="complaint_authority"><![CDATA[Наименования органа обращения <span style="color:red">*</span>]]></string>
+    <string name="complaint_save_data">Запомнить мои данные</string>
+    <string name="complaint_type"><![CDATA[Вид жалобы <span style="color:red">*</span>]]></string>
+    <string name="complaint_date"><![CDATA[Дата посещения объекта <span style="color:red">*</span>]]></string>
+    <string name="complaint_object_name"><![CDATA[Название объекта <span style="color:red">*</span>]]></string>
+    <string name="complaint_office">Офис (если есть)</string>
+    <string name="complaint_goal"><![CDATA[Цель посещения объекта <span style="color:red">*</span>]]></string>
+    <string name="complaint_choose"><![CDATA[Выберите из списка что именно вас не устроило на объекте, либо оставьте комментарий <span style="color:red">*</span>]]></string>
+    <string name="complaint_other">Другое</string>
+    <string name="complaint_life_thread">Данными условиями создана угроза причинения вреда моей жизни и здоровью (отметить, если это так)</string>
+    <string name="complaint_app">Приложения</string>
+    <string name="complaint_video_link">Ссылка на видео (не обязательно)</string>
+    <string name="complaint_upload_photo">Загрузите фото</string>
+    <string name="complaint_type_1">Жалоба на отсутствие пандуса / подъемника на входе в объект</string>
+    <string name="complaint_type_2">Жалоба на отсутствие доступа на объект или несоответствии функциональных зон объекта требованиям нормативного законодательства</string>
+    <string name="complain_created">Жалоба подана</string>
+    <string name="complaint_wrong_iin">Не верный формат ИИН</string>
+    <string name="complaint_choose_photo">Выберите хотя бы одну фотографию</string>
+    <string name="complaint_options_warning">Выберите из списка что именно вас не устроило на объекте, либо оставьте комментарий</string>
+    <string name="complaint_file_downloaded">Файл %s скачен и помещен в папку Download</string>
+    <string name="complaint_file_downloading">Скачивается файл</string>
+    <string name="complaint_download_message">Мы сформировали жалобу в .docx формате, его можно скачать тут или в вашем профиле во вкладке Мои тикеты</string>
+
+    <string name="availability_mark">Оценка доступности зоны</string>
+    <string name="availability_1">Люди, передвигающиеся на кресло-коляске</string>
+    <string name="availability_2">Люди с нарушением опорно-двигательного аппарата</string>
+    <string name="availability_3">Люди с инвалидностью по зрению</string>
+    <string name="availability_4">Люди с инвалидностью по слуху</string>
+    <string name="availability_5">Люди с интеллектуальной инвалидностью</string>
+    <string name="availability_disagree">Система оценила %s. Если вы не согласны с оценкой, вы можете оставить комментарий с пояснением</string>
+
+    <string name="mark_1">уровень доступности входной группы</string>
+    <string name="mark_2">доступность парковки</string>
+    <string name="mark_3">уровень доступности зоны оказания услуг</string>
+    <string name="mark_4">уровень доступности туалета</string>
+    <string name="mark_5">уровень доступности навигации</string>
+    <string name="mark_6">уровень доступности услуг</string>
+    <string name="mark_7">уровень доступности путей движения по объекту</string>
+    <string name="mark_8">уровень доступности и безопасность услуг для детей до 7 лет</string>
+
+    <string name="settings_language">Язык</string>
+    <string name="settings_notification">Уведомления</string>
+    <string name="settings_category">Категория</string>
+    <string name="settings_city">Город</string>
+
+
+</resources>

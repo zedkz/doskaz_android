@@ -1,0 +1,83 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textViewStyle">@style/DefaultTextViewStyle</item>
+        <item name="android:buttonStyle">@style/DefaultButtonViewStyle</item>
+        <item name="android:editTextStyle">@style/DefaultEditTextViewStyle</item>
+        <item name="android:spinnerItemStyle">@style/DefaultSpinnerStyle</item>
+        <item name="spinnerDropDownItemStyle">@style/DefaultSpinnerStyle</item>
+    </style>
+
+    <style name="DefaultTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="DefaultEditTextViewStyle" parent="android:Widget.EditText">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+    </style>
+
+    <style name="DefaultButtonViewStyle" parent="android:Widget.Button">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/skin_blue</item>
+    </style>
+
+    <style name="DefaultTextInputEditTextViewStyle">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+    </style>
+
+    <style name="DefaultTextInputLayoutViewStyle">
+        <item name="colorAccent">@color/colorText</item>
+        <item name="colorControlNormal">@color/colorText</item>
+        <item name="colorControlActivated">@color/colorText</item>
+        <item name="colorControlHighlight">@color/colorText</item>
+    </style>
+
+    <style name="DefaultSpinnerStyle" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="SpinnerGreyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:spinnerItemStyle">@style/SpinnerGreyStyle</item>
+        <item name="spinnerDropDownItemStyle">@style/SpinnerGreyStyle</item>
+    </style>
+
+    <style name="SpinnerGreyStyle" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="CustomDialogFragmentTheme" parent="AppTheme">
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:background">@drawable/ic_8</item>
+    </style>
+
+
+</resources>

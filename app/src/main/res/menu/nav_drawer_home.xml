@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_drawer_city"
+        android:title="City"
+        android:icon="@drawable/ic_88"/>
+
+<!--    <item-->
+<!--        android:id="@+id/nav_drawer_blog"-->
+<!--        android:title="@string/blog"-->
+<!--        android:icon="@drawable/ic_87"/>-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_drawer_events"-->
+<!--        android:title="@string/profile_my_events"-->
+<!--        android:icon="@drawable/ic_20"/>-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_drawer_task"-->
+<!--        android:title="@string/profile_my_task"-->
+<!--        android:icon="@drawable/ic_21"/>-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_drawer_comment"-->
+<!--        android:title="@string/profile_my_comments"-->
+<!--        android:icon="@drawable/ic_22"/>-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_drawer_objects"-->
+<!--        android:title="@string/profile_my_objects"-->
+<!--        android:icon="@drawable/ic_23"/>-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_drawer_help"-->
+<!--        android:title="@string/help"/>-->
+
+    <item
+        android:id="@+id/nav_drawer_about"
+        android:title="@string/about"/>
+
+    <item
+        android:id="@+id/nav_drawer_contact"
+        android:title="@string/contacts"/>
+
+    <item
+        android:id="@+id/nav_drawer_settings"
+        android:title="@string/settings"/>
+
+</menu>

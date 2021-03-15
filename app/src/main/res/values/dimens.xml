@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="edit_text_height">56dp</dimen>
+    <dimen name="edit_text_height_small">46dp</dimen>
+    <dimen name="input_edit_text_height">66dp</dimen>
+    <dimen name="progress_bar_width">100dp</dimen>
+    <dimen name="progress_bar_height">5dp</dimen>
+    <dimen name="object_text_size">14sp</dimen>
+    <dimen name="flow_text_size">14sp</dimen>
+    <dimen name="icon_padding">8dp</dimen>
+</resources>

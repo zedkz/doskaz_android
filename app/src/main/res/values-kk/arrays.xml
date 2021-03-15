@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sort">
+        <item>Жаңа бірінші</item>
+        <item>Бірінші ескі</item>
+    </string-array>
+
+    <string-array name="sort_1">
+        <item>Жаңа бірінші</item>
+        <item>Алдымен танымал</item>
+    </string-array>
+
+    <string-array name="overall_scope">
+        <item>Толық қол жетімді</item>
+        <item>Ішінара қол жетімді</item>
+        <item>Қол жетімді емес</item>
+        <item>Берілмеген</item>
+        <item>Белгісіз</item>
+    </string-array>
+</resources>

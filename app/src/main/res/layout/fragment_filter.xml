@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_toolbar_main"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/filter_accessibility"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toBottomOf="@id/text"
+            app:layout_constraintStart_toStartOf="@id/text"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_63"/>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkboxFullAccessibleFilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/image"
+            app:layout_constraintBottom_toBottomOf="@id/image"
+            app:layout_constraintStart_toEndOf="@id/image"
+            app:layout_constraintEnd_toEndOf="@id/text"
+            android:layout_marginStart="15dp"
+            android:text="@string/full_accessible"
+            android:drawableTint="@color/colorPrimary"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_constraintStart_toStartOf="@id/text"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_46"/>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkboxPartialAccessibleFilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/image1"
+            app:layout_constraintBottom_toBottomOf="@id/image1"
+            app:layout_constraintStart_toEndOf="@id/image1"
+            app:layout_constraintEnd_toEndOf="@id/text"
+            android:layout_marginStart="15dp"
+            android:text="@string/partial_accessible"
+            android:drawableTint="@color/colorPrimary"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toBottomOf="@id/image1"
+            app:layout_constraintStart_toStartOf="@id/text"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_45"/>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkboxNotAccessibleFilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/image2"
+            app:layout_constraintBottom_toBottomOf="@id/image2"
+            app:layout_constraintStart_toEndOf="@id/image2"
+            app:layout_constraintEnd_toEndOf="@id/text"
+            android:layout_marginStart="15dp"
+            android:text="@string/not_accessible"
+            android:drawableTint="@color/colorPrimary"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/image2"
+            app:layout_constraintStart_toStartOf="@id/text"
+            app:layout_constraintEnd_toEndOf="@id/text"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="@string/filter_category"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerFilter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:nestedScrollingEnabled="false"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

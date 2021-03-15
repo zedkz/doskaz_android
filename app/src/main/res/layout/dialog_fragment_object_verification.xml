@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <TextView
+        android:id="@+id/txtTitleOVDF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="@string/om_verification"/>
+
+    <TextView
+        android:id="@+id/txtDescriptionOVDF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtTitleOVDF"
+        app:layout_constraintStart_toStartOf="@id/txtTitleOVDF"
+        app:layout_constraintEnd_toEndOf="@id/txtTitleOVDF"
+        android:layout_marginTop="20dp"
+        android:text="@string/om_verification_text"/>
+
+    <Button
+        android:id="@+id/btnNoOVDF"
+        android:layout_width="110dp"
+        android:layout_height="@dimen/button_height"
+        app:layout_constraintTop_toBottomOf="@id/txtDescriptionOVDF"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:drawableStart="@drawable/ic_82"
+        android:background="@drawable/skin_trans_border_grey_padding"
+        android:textColor="@color/colorText"
+        android:text="@string/no"/>
+
+    <Button
+        android:id="@+id/btnYesOVDF"
+        android:layout_width="110dp"
+        android:layout_height="@dimen/button_height"
+        app:layout_constraintTop_toBottomOf="@id/txtDescriptionOVDF"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:drawableStart="@drawable/ic_83"
+        android:background="@drawable/skin_trans_border_grey_padding"
+        android:textColor="@color/colorText"
+        android:text="@string/yes"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

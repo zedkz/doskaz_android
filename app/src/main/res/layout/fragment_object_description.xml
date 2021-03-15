@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:ellipsize="end"
+        android:text="@string/om_description"/>
+
+    <TextView
+        android:id="@+id/txtDescriptionObjectDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintStart_toStartOf="@id/text"
+        app:layout_constraintEnd_toEndOf="@id/text"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txtMoreInfoObjectDescription"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtDescriptionObjectDescription"
+        app:layout_constraintStart_toStartOf="@id/text"
+        app:layout_constraintEnd_toEndOf="@id/text"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/om_more_info"/>
+
+    <TextView
+        android:id="@+id/txtVerifiedObjectDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtMoreInfoObjectDescription"
+        app:layout_constraintStart_toStartOf="@id/text"
+        app:layout_constraintEnd_toEndOf="@id/text"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorGrey"
+        android:text="@string/full_verified"/>
+
+    <Button
+        android:id="@+id/btnVerifiedObjectDescription"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/skin_gray_light"
+        app:layout_constraintTop_toBottomOf="@id/txtVerifiedObjectDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/btnVerifiedObjectDescription"
+        app:layout_constraintBottom_toBottomOf="@id/btnVerifiedObjectDescription"
+        app:layout_constraintStart_toStartOf="@id/btnVerifiedObjectDescription"
+        app:layout_constraintEnd_toEndOf="@id/btnVerifiedObjectDescription"
+        android:text="@string/om_verify"
+        android:drawableStart="@drawable/ic_80"
+        android:drawablePadding="5dp"/>
+
+    <Button
+        android:id="@+id/btnComplaintObjectDescription"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/skin_white_corner_border"
+        app:layout_constraintTop_toBottomOf="@id/btnVerifiedObjectDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/btnComplaintObjectDescription"
+        app:layout_constraintBottom_toBottomOf="@id/btnComplaintObjectDescription"
+        app:layout_constraintStart_toStartOf="@id/btnComplaintObjectDescription"
+        app:layout_constraintEnd_toEndOf="@id/btnComplaintObjectDescription"
+        android:text="@string/om_complaint"
+        android:drawableStart="@drawable/ic_81"
+        android:drawablePadding="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

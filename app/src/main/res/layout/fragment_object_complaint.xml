@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_main"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"/>
+
+            <TextView
+                android:id="@+id/txtTextOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="20dp"
+                android:text="@string/complaint_text"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                app:layout_constraintTop_toBottomOf="@id/txtTextOC"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGrey"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/divider"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="@string/complaint_common_info"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/edtSurnameOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/text1"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_surname"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/edtNameOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtSurnameOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_name"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/edtMiddleNameOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtNameOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_middle_name"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/edtIinOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtMiddleNameOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_iin"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectTextView
+                android:id="@+id/txtCityOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtIinOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_city"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/edtStreetOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtCityOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_street"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/edtHouseOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtStreetOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                android:layout_marginEnd="8dp"
+                app:title="@string/complaint_house"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/edtApartmentOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtStreetOC"
+                app:layout_constraintStart_toEndOf="@id/guideline"
+                app:layout_constraintEnd_toEndOf="@id/txtCityOC"
+                android:layout_marginStart="8dp"
+                app:title="@string/complaint_house"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectMaskedEditTextView
+                android:id="@+id/edtPhoneOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtApartmentOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_house"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectTextView
+                android:id="@+id/txtAuthorityOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtPhoneOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_city"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkboxRememberOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtAuthorityOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                android:layout_marginTop="10dp"
+                android:text="@string/complaint_save_data"/>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/checkboxRememberOC"
+                android:background="@color/colorGrey"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/divider1"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="@string/complaint"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectTextView
+                android:id="@+id/txtTypeOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/text2"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_type"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectTextView
+                android:id="@+id/txtDateOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtTypeOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_date"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/edtNameComplaintOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtDateOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_city"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectTextView
+                android:id="@+id/txtCityComplaintOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtNameComplaintOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_city"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/edtStreetComplaintOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtCityComplaintOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_city"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/edtHouseComplaintOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtStreetComplaintOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                android:layout_marginEnd="8dp"
+                app:title="@string/complaint_city"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/edtOfficeComplaintOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtStreetComplaintOC"
+                app:layout_constraintStart_toEndOf="@id/guideline"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                android:layout_marginStart="8dp"
+                app:title="@string/complaint_office"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/edtGoalComplaintOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtHouseComplaintOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_goal"/>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                app:layout_constraintTop_toBottomOf="@id/edtGoalComplaintOC"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGrey"/>
+
+            <TextView
+                android:id="@+id/txtChooseOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/divider4"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                android:layout_marginTop="20dp"
+                android:text="@string/complaint_choose"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerOptionsOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtChooseOC"
+                android:layout_marginTop="15dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:nestedScrollingEnabled="false"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/edtOtherComplaintOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/recyclerOptionsOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:title="@string/complaint_other"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkboxLifeThreadOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edtOtherComplaintOC"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                android:text="@string/complaint_life_thread"/>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                app:layout_constraintTop_toBottomOf="@id/checkboxLifeThreadOC"
+                android:background="@color/colorGrey"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/divider2"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:text="@string/complaint_app"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerVideoOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/text3"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:nestedScrollingEnabled="false"/>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/recyclerVideoOC"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                android:layout_marginTop="10dp"
+                android:text="@string/complaint_upload_photo"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerPhotoOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/text4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/txtTextOC"
+                app:layout_constraintEnd_toEndOf="@id/txtTextOC"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                android:nestedScrollingEnabled="false"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBarComplaint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

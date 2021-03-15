@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorGreyLight">
+
+        <EditText
+            android:id="@+id/edtSearchSearch"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imgVoiceSearch"
+            android:layout_margin="10dp"
+            android:background="@drawable/skin_white_corner"
+            android:hint="@string/map_home_or_address"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/imgClearSearch"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/edtSearchSearch"
+            app:layout_constraintBottom_toBottomOf="@id/edtSearchSearch"
+            app:layout_constraintEnd_toEndOf="@id/edtSearchSearch"
+            android:padding="6dp"
+            android:src="@drawable/ic_56"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imgFilterSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_55"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="15dp"/>
+
+        <ImageView
+            android:id="@+id/imgVoiceSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_73"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imgFilterSearch"
+            android:layout_marginEnd="15dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSearch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/constraint"
+        app:layout_constraintBottom_toTopOf="@id/btnShowOnMapSearch"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <Button
+        android:id="@+id/btnShowOnMapSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/filter_show_on_map"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

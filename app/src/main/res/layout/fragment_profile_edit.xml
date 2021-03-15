@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/img_2"
+                android:scaleType="centerCrop"/>
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/include_toolbar"/>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/skin_white_corner_top"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvatarProfileEdit"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:layout_constraintTop_toTopOf="@id/view"
+                app:layout_constraintStart_toStartOf="@id/view"
+                android:layout_margin="24dp"
+                android:src="@drawable/ic_60"/>
+
+            <ImageView
+                android:id="@+id/imgLevelProfileEdit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintTop_toTopOf="@id/imgAvatarProfileEdit"
+                app:layout_constraintEnd_toEndOf="@id/imgAvatarProfileEdit"
+                android:src="@drawable/ic_41"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtNameProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/imgAvatarProfileEdit"
+                app:layout_constraintStart_toEndOf="@id/imgAvatarProfileEdit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="44dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imgVerifiedProfileEdit"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:layout_constraintTop_toTopOf="@id/txtNameProfileEdit"
+                app:layout_constraintBottom_toBottomOf="@id/txtNameProfileEdit"
+                app:layout_constraintStart_toEndOf="@id/txtNameProfileEdit"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_61"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtStatusProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtNameProfileEdit"
+                app:layout_constraintStart_toStartOf="@id/txtNameProfileEdit"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="24dp"/>
+
+            <Button
+                android:id="@+id/btnEditProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/txtStatusProfileEdit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/skin_gray_light"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/edit"/>
+
+            <TextView
+                android:id="@+id/txtLevelProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/btnEditProfileEdit"
+                app:layout_constraintStart_toStartOf="@id/btnEditProfileEdit"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="@string/level"/>
+
+            <TextView
+                android:id="@+id/txtCurrentLevelProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/txtLevelProfileEdit"
+                app:layout_constraintBottom_toBottomOf="@id/txtLevelProfileEdit"
+                app:layout_constraintEnd_toEndOf="@id/btnEditProfileEdit"/>
+
+            <ProgressBar
+                android:id="@+id/prgLevelProfileEdit"
+                android:layout_width="@dimen/progress_bar_width"
+                android:layout_height="@dimen/progress_bar_height"
+                app:layout_constraintTop_toTopOf="@id/txtCurrentLevelProfileEdit"
+                app:layout_constraintBottom_toBottomOf="@id/txtCurrentLevelProfileEdit"
+                app:layout_constraintEnd_toStartOf="@id/txtCurrentLevelProfileEdit"
+                app:layout_constraintVertical_bias="0.66"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/skin_progress"/>
+
+            <TextView
+                android:id="@+id/txtObjectProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtLevelProfileEdit"
+                app:layout_constraintStart_toStartOf="@id/btnEditProfileEdit"
+                app:layout_constraintEnd_toStartOf="@id/guideline_1"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/txtChecklistProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/txtObjectProfileEdit"
+                app:layout_constraintStart_toEndOf="@id/guideline_1"
+                app:layout_constraintEnd_toStartOf="@id/guideline_2"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:id="@+id/txtComplaintProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/txtObjectProfileEdit"
+                app:layout_constraintStart_toEndOf="@id/guideline_2"
+                app:layout_constraintEnd_toEndOf="@id/btnEditProfileEdit"
+                android:layout_marginStart="5dp"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                app:layout_constraintTop_toBottomOf="@id/txtObjectProfileEdit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorGrey"/>
+
+            <TextView
+                android:id="@+id/txtTaskProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/divider"
+                app:layout_constraintStart_toStartOf="@id/btnEditProfileEdit"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:text="@string/current_task"/>
+
+            <TextView
+                android:id="@+id/txtCurrentTaskProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/txtTaskProfileEdit"
+                app:layout_constraintBottom_toBottomOf="@id/txtTaskProfileEdit"
+                app:layout_constraintEnd_toEndOf="@id/btnEditProfileEdit"/>
+
+            <ProgressBar
+                android:id="@+id/prgTaskProfileEdit"
+                android:layout_width="@dimen/progress_bar_width"
+                android:layout_height="@dimen/progress_bar_height"
+                app:layout_constraintTop_toTopOf="@id/txtCurrentTaskProfileEdit"
+                app:layout_constraintBottom_toBottomOf="@id/txtCurrentTaskProfileEdit"
+                app:layout_constraintEnd_toStartOf="@id/txtCurrentTaskProfileEdit"
+                app:layout_constraintVertical_bias="0.66"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/skin_progress"/>
+
+            <TextView
+                android:id="@+id/txtTaskTextProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtCurrentTaskProfileEdit"
+                app:layout_constraintStart_toStartOf="@id/btnEditProfileEdit"
+                app:layout_constraintEnd_toEndOf="@id/btnEditProfileEdit"
+                android:layout_marginTop="12dp"/>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                app:layout_constraintTop_toBottomOf="@id/txtTaskTextProfileEdit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorGrey"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/divider1"
+                app:layout_constraintStart_toStartOf="@id/btnEditProfileEdit"
+                app:layout_constraintEnd_toEndOf="@id/btnEditProfileEdit"
+                android:layout_marginTop="20dp"
+                android:text="@string/profile_edit"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/text"
+                app:layout_constraintStart_toStartOf="@id/btnEditProfileEdit"
+                app:layout_constraintEnd_toEndOf="@id/btnEditProfileEdit"
+                android:layout_marginTop="15dp"
+                android:text="@string/profile_edit_text"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilLastNameProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/text1"
+                app:layout_constraintStart_toStartOf="@id/btnEditProfileEdit"
+                app:layout_constraintEnd_toEndOf="@id/btnEditProfileEdit"
+                app:errorEnabled="true"
+                android:layout_marginTop="20dp"
+                android:theme="@style/DefaultTextInputLayoutViewStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieLastNameProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_edit_text_height"
+                    android:background="@drawable/skin_trans_border_grey_padding"
+                    android:hint="@string/profile_last_name"
+                    style="@style/DefaultTextInputEditTextViewStyle"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFirstNameProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tilLastNameProfileEdit"
+                app:layout_constraintStart_toStartOf="@id/btnEditProfileEdit"
+                app:layout_constraintEnd_toEndOf="@id/btnEditProfileEdit"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp"
+                android:theme="@style/DefaultTextInputLayoutViewStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieFirstNameProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_edit_text_height"
+                    android:background="@drawable/skin_trans_border_grey_padding"
+                    android:hint="@string/profile_first_name"
+                    style="@style/DefaultTextInputEditTextViewStyle"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilMiddleNameProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tilFirstNameProfileEdit"
+                app:layout_constraintStart_toStartOf="@id/btnEditProfileEdit"
+                app:layout_constraintEnd_toEndOf="@id/btnEditProfileEdit"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp"
+                android:theme="@style/DefaultTextInputLayoutViewStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieMiddleNameProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_edit_text_height"
+                    android:background="@drawable/skin_trans_border_grey_padding"
+                    android:hint="@string/profile_middle_name"
+                    style="@style/DefaultTextInputEditTextViewStyle"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmailProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tilMiddleNameProfileEdit"
+                app:layout_constraintStart_toStartOf="@id/btnEditProfileEdit"
+                app:layout_constraintEnd_toEndOf="@id/btnEditProfileEdit"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp"
+                android:theme="@style/DefaultTextInputLayoutViewStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieEmailProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_edit_text_height"
+                    android:background="@drawable/skin_trans_border_grey_padding"
+                    android:hint="@string/profile_email"
+                    style="@style/DefaultTextInputEditTextViewStyle"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPhoneProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tilEmailProfileEdit"
+                app:layout_constraintStart_toStartOf="@id/btnEditProfileEdit"
+                app:layout_constraintEnd_toEndOf="@id/btnEditProfileEdit"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp"
+                android:theme="@style/DefaultTextInputLayoutViewStyle">
+
+                <com.santalu.maskedittext.MaskEditText
+                    android:id="@+id/tiePhoneProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_edit_text_height"
+                    android:background="@drawable/skin_trans_border_grey_padding"
+                    android:hint="@string/profile_phone"
+                    style="@style/DefaultTextInputEditTextViewStyle"
+                    app:met_mask="+7 (7##) ###-##-##"
+                    android:inputType="phone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilSmsProfileEdit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tilPhoneProfileEdit"
+                app:layout_constraintStart_toStartOf="@id/btnEditProfileEdit"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp"
+                android:theme="@style/DefaultTextInputLayoutViewStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieSmsProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_edit_text_height"
+                    android:background="@drawable/skin_trans_border_grey_padding"
+                    android:hint="@string/profile_sms"
+                    style="@style/DefaultTextInputEditTextViewStyle"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtGetSmsProfileEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/tilSmsProfileEdit"
+                app:layout_constraintBottom_toBottomOf="@id/tilSmsProfileEdit"
+                app:layout_constraintStart_toEndOf="@id/tilSmsProfileEdit"
+                android:layout_marginStart="20dp"
+                android:drawableStart="@drawable/ic_12"
+                android:drawablePadding="10dp"
+                android:text="@string/profile_get_sms"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilStatusProfileEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tilSmsProfileEdit"
+                app:layout_constraintStart_toStartOf="@id/btnEditProfileEdit"
+                app:layout_constraintEnd_toEndOf="@id/btnEditProfileEdit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="100dp"
+                app:errorEnabled="true"
+                android:layout_marginTop="10dp"
+                android:theme="@style/DefaultTextInputLayoutViewStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tieStatusProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_edit_text_height"
+                    android:background="@drawable/skin_trans_border_grey_padding"
+                    android:hint="@string/profile_show_status"
+                    style="@style/DefaultTextInputEditTextViewStyle"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnSaveProfileEdit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/colorPrimary"
+        android:text="@string/save"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

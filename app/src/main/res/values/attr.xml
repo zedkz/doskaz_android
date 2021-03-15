@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="title" format="string"/>
+    <attr name="value" format="string"/>
+    <attr name="hint" format="string"/>
+    <attr name="showError" format="boolean"/>
+    <attr name="showQuestion" format="boolean"/>
+    <attr name="dropDownIcon" format="reference"/>
+    <attr name="showDropDownIcon" format="boolean"/>
+    <attr name="isRequired" format="boolean"/>
+
+    <declare-styleable name="ObjectTextView">
+        <attr name="title"/>
+        <attr name="value"/>
+        <attr name="hint" />
+        <attr name="showError"/>
+        <attr name="showQuestion"/>
+        <attr name="dropDownIcon"/>
+        <attr name="isRequired"/>
+    </declare-styleable>
+
+    <declare-styleable name="ObjectBigEditTextView">
+        <attr name="title"/>
+        <attr name="value"/>
+        <attr name="hint" />
+        <attr name="showError"/>
+        <attr name="showQuestion"/>
+        <attr name="isRequired"/>
+    </declare-styleable>
+
+    <declare-styleable name="ObjectEditTextView">
+        <attr name="title"/>
+        <attr name="value"/>
+        <attr name="hint" />
+        <attr name="showError"/>
+        <attr name="showQuestion"/>
+        <attr name="dropDownIcon"/>
+        <attr name="questionIcon" format="reference"/>
+        <attr name="showDropDownIcon"/>
+        <attr name="isRequired"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp">
+
+    <TextView
+        android:id="@+id/txtTitleMyComplaints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtTextMyComplaints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtTitleMyComplaints"/>
+
+    <TextView
+        android:id="@+id/txtDateMyComplaints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtTextMyComplaints"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorGrey"/>
+
+    <TextView
+        android:id="@+id/txtResponseMyComplaints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/txtDateMyComplaints"
+        app:layout_constraintStart_toEndOf="@id/txtDateMyComplaints"
+        android:layout_marginStart="20dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorGrey"/>
+
+    <TextView
+        android:id="@+id/txtDownloadMyComplaints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/txtDateMyComplaints"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/colorGrey"
+        android:textSize="12sp"
+        android:text="@string/profile_download_complaint"
+        android:drawableStart="@drawable/ic_108"
+        android:drawablePadding="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

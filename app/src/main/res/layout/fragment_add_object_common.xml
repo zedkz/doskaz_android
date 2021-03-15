@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_main"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtCommonInfoAOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/object_common_info"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/ovetNameAOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtCommonInfoAOC"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoAOC"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoAOC"
+                app:title="@string/object_name"
+                app:showQuestion="true"
+                app:showDropDownIcon="false"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/ovetOtherNameAOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ovetNameAOC"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoAOC"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoAOC"
+                app:showDropDownIcon="false"
+                app:showQuestion="true"
+                app:title="@string/object_other_name" />
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/ovetAddressAOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoAOC"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoAOC"
+                app:layout_constraintTop_toBottomOf="@id/ovetOtherNameAOC"
+                app:showDropDownIcon="false"
+                app:showQuestion="true"
+                app:title="@string/object_address" />
+
+
+            <com.zed.kz.doskaz.global.views.ObjectTextView
+                android:id="@+id/ovCategoryAOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ovetAddressAOC"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoAOC"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoAOC"
+                android:layout_marginTop="15dp"
+                app:title="@string/object_category"
+                app:hint="@string/choose_answer_option"
+                app:showQuestion="true"/>
+
+
+            <com.zed.kz.doskaz.global.views.ObjectTextView
+                android:id="@+id/ovSubCategoryAOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ovCategoryAOC"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoAOC"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoAOC"
+                android:layout_marginTop="15dp"
+                app:title="@string/object_sub_category"
+                app:hint="@string/choose_answer_option"
+                app:showQuestion="true"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectTextView
+                android:id="@+id/ovMapAOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ovSubCategoryAOC"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoAOC"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoAOC"
+                android:layout_marginTop="15dp"
+                app:title="@string/object_map"
+                app:showQuestion="true"
+                app:dropDownIcon="@drawable/ic_68"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvVideoAOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ovMapAOC"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoAOC"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoAOC"
+                android:layout_marginTop="15dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:nestedScrollingEnabled="false"/>
+
+            <TextView
+                android:id="@+id/txtPhotoAOC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/rvVideoAOC"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoAOC"
+                android:layout_marginTop="15dp"
+                android:text="@string/object_upload_photo"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPhotoAOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtPhotoAOC"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoAOC"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoAOC"
+                android:layout_marginTop="5dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                android:nestedScrollingEnabled="false"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectBigEditTextView
+                android:id="@+id/obetDescAOC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/rvPhotoAOC"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoAOC"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoAOC"
+                android:layout_marginTop="10dp"
+                app:title="@string/object_desc"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

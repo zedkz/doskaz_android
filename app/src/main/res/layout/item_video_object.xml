@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp">
+
+    <com.zed.kz.doskaz.global.views.ObjectEditTextView
+        android:id="@+id/oetVideoObjectItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showQuestion="true"
+        app:questionIcon="@drawable/ic_70"
+        app:title="@string/object_video_link"
+        app:showDropDownIcon="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

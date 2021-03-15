@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_main"/>
+
+    <ImageView
+        android:id="@+id/imgFilterBlogList"
+        android:layout_width="@dimen/edit_text_height_small"
+        android:layout_height="@dimen/edit_text_height_small"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/ic_55"/>
+
+    <EditText
+        android:id="@+id/edtSearchBlogList"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edit_text_height_small"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgFilterBlogList"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="@dimen/edit_text_height_small"
+        android:background="@drawable/skin_gray_light"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/imgClearSearchBlogList"
+        android:layout_width="@dimen/edit_text_height_small"
+        android:layout_height="@dimen/edit_text_height_small"
+        app:layout_constraintTop_toTopOf="@id/edtSearchBlogList"
+        app:layout_constraintBottom_toBottomOf="@id/edtSearchBlogList"
+        app:layout_constraintEnd_toEndOf="@id/edtSearchBlogList"
+        android:padding="10dp"
+        android:src="@drawable/ic_56"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerBlogList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/edtSearchBlogList"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/edtSearchBlogList"
+        app:layout_constraintEnd_toEndOf="@id/imgFilterBlogList"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

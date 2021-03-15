@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_toolbar_main"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollViewASO"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rootConstASO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgPreviousASO"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/ic_64"
+                android:padding="9dp"/>
+
+            <ImageView
+                android:id="@+id/imgNextASO"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_5"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/imgPreviousASO"
+                app:layout_constraintBottom_toBottomOf="@id/imgPreviousASO"
+                app:layout_constraintStart_toEndOf="@id/imgPreviousASO"
+                app:layout_constraintEnd_toStartOf="@id/imgNextASO"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/object_simple"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                app:layout_constraintTop_toBottomOf="@id/text"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorDivider"/>
+
+            <TextView
+                android:id="@+id/txtCommonInfoASO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/divider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/object_common_info"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/ovetNameASO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtCommonInfoASO"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoASO"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoASO"
+                app:title="@string/object_name"
+                app:showQuestion="true"
+                app:showDropDownIcon="false"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/ovetOtherNameASO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ovetNameASO"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoASO"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoASO"
+                app:showDropDownIcon="false"
+                app:showQuestion="true"
+                app:title="@string/object_other_name" />
+
+            <com.zed.kz.doskaz.global.views.ObjectEditTextView
+                android:id="@+id/ovetAddressASO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoASO"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoASO"
+                app:layout_constraintTop_toBottomOf="@id/ovetOtherNameASO"
+                app:showDropDownIcon="false"
+                app:showQuestion="true"
+                app:title="@string/object_address" />
+
+
+            <com.zed.kz.doskaz.global.views.ObjectTextView
+                android:id="@+id/ovCategoryASO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ovetAddressASO"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoASO"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoASO"
+                android:layout_marginTop="15dp"
+                app:title="@string/object_category"
+                app:hint="@string/choose_answer_option"
+                app:showQuestion="true"/>
+
+
+            <com.zed.kz.doskaz.global.views.ObjectTextView
+                android:id="@+id/ovSubCategoryASO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ovCategoryASO"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoASO"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoASO"
+                android:layout_marginTop="15dp"
+                app:title="@string/object_sub_category"
+                app:hint="@string/choose_answer_option"
+                app:showQuestion="true"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectTextView
+                android:id="@+id/ovMapASO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ovSubCategoryASO"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoASO"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoASO"
+                android:layout_marginTop="15dp"
+                app:title="@string/object_map"
+                app:showQuestion="true"
+                app:dropDownIcon="@drawable/ic_68"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvVideoASO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ovMapASO"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoASO"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoASO"
+                android:layout_marginTop="15dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:nestedScrollingEnabled="false"/>
+
+            <TextView
+                android:id="@+id/txtPhotoASO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/rvVideoASO"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoASO"
+                android:layout_marginTop="15dp"
+                android:text="@string/object_upload_photo"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPhotoASO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txtPhotoASO"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoASO"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoASO"
+                android:layout_marginTop="5dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                android:nestedScrollingEnabled="false"/>
+
+            <com.zed.kz.doskaz.global.views.ObjectBigEditTextView
+                android:id="@+id/ovetDescASO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/rvPhotoASO"
+                app:layout_constraintEnd_toEndOf="@id/txtCommonInfoASO"
+                app:layout_constraintStart_toStartOf="@id/txtCommonInfoASO"
+                app:showDropDownIcon="false"
+                app:showQuestion="true"
+                app:title="@string/object_desc"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerAddSimpleObject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ovetDescASO"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="85dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:nestedScrollingEnabled="false"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
